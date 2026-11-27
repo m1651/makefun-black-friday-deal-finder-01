@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Scout — Real deals, checked today</title>
+<meta name="description" content="27 real Black Friday 2026 deals from Amazon, Best Buy, Walmart, Target and more — each price checked on 27 November 2026, with an honest verdict on whether it is really a deal.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">◆</span>
+    <div>
+      <h1>Black Friday Scout</h1>
+      <p>Real deals, checked by hand on Black Friday — 27 Nov 2026</p>
+    </div>
+  </div>
+  <p class="tagline">Every price below was read at the named store or in a deals roundup that names the store, on 27 November 2026. Nothing here is guessed.</p>
+</header>
+
+<section class="controls" aria-label="Find a deal">
+  <label class="search">
+    <span>Search</span>
+    <input id="search" type="search" placeholder="Try “AirPods”, “OLED”, “vacuum”… " autocomplete="off">
+  </label>
+  <label>
+    <span>Category</span>
+    <select id="category">
+      <option value="">All categories</option>
+    </select>
+  </label>
+  <label>
+    <span>Store</span>
+    <select id="store">
+      <option value="">All stores</option>
+    </select>
+  </label>
+  <label>
+    <span>Discount at least</span>
+    <select id="mindiscount">
+      <option value="0">Any discount</option>
+      <option value="25">25% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+  </label>
+  <label>
+    <span>Sort by</span>
+    <select id="sort">
+      <option value="discount">Biggest discount first</option>
+      <option value="saving">Biggest saving first</option>
+      <option value="price-asc">Lowest sale price first</option>
+      <option value="price-desc">Highest sale price first</option>
+    </select>
+  </label>
+</section>
+
+<p id="summary" class="summary" aria-live="polite"></p>
+<main id="deals" class="grid"></main>
+<p id="empty" class="empty" hidden>No deals match that search. Try clearing a filter.</p>
+
+<footer>
+  <p><strong>How to read a card:</strong> the sale price is what the store showed on 27 Nov 2026; the struck-through price is the store's usual price; the badge is the discount between them. The verdict says whether the price is a genuine low, a strong price, or a routine sale — and the evidence line says why.</p>
+  <p>Prices move fast on Black Friday and stock sells out. Check the price again at the store before you buy — each card links to the product at its store. Prices in US dollars.</p>
+</footer>
+</body>
+</html>
